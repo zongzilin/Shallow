@@ -2,15 +2,12 @@
 #include<tuple>
 #include<mpi.h>
 #include<cblas.h>
-#include<boost/program_options.hpp>
-#include<fstream>
 #include<cstdlib>
 
 #include"cw_blas.h"
 #include"cw_mpi.h"
 
 using namespace std;
-ofstream outdata;
 
 int main(int argc, char* argv[]){
 
@@ -80,12 +77,11 @@ int main(int argc, char* argv[]){
     ddx = sw.gen_deri_x_coeff(dx, Nx, Ny, lelg, lelgy, totlelg);
     ddy = sw.gen_deri_y_coeff(dy, lelg, lelgy, totlelg);
 
-/*     double* dhdx = new double[totlelg + 6*lelgy];
-    double* dhdy = new double[totlelg + 6*lelgy];
-    sw.deri_x_blas(h, Nx, Ny, lelg, lelgy, totlelg, ddx, dhdx);
-    sw.deri_y_blas(h, Nx, Ny, lelg, lelgy, totlelg, ddy, dy, dhdy); */
-
+    // TIME LOOP
     int n_t = T/dt;
+    double t1, t2;
+
+    t1 = MPI_Wtime();
 
     for (int i_t = 0; i_t < n_t + 1; ++i_t){
 
@@ -97,14 +93,12 @@ int main(int argc, char* argv[]){
 
     }
 
-    sw.final_message(pid);
+    t2 = MPI_Wtime();
+    double tt = t2 - t1;
+
+    sw.final_message(pid, tt);
 
     sw.write_to_file(Nx, Ny, lelg, lelgy, lx, ly, u, v, h, pid, nprocs);
-
-
-
-
-
 
     MPI_Finalize();
     

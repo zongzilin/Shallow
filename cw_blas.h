@@ -25,13 +25,12 @@ public:
     void castSpec(int Nx, int Ny, double dt, double T, double ic, int pid){
 
         if (pid == 0){
-            cout << "------------ SOLVER START ------------" << endl;
-            cout << "                                      " << endl;
             cout << "----------- SPECIFICATIONS -----------" << endl;
             cout << " Nx: " << Nx << "                      " << " Ny: " << Ny << endl;
             cout << " dt: " << dt << "                      " << " T: " << T << endl;
             cout << " Initial Conditions: " << ic << endl;
             cout << "--------------------------------------" << endl;
+            cout << "Timestepping ...." << endl;
         }   
 
     }
@@ -489,7 +488,7 @@ public:
         }
         outdata.close();
     }
-
+    
     }
 
     void swap_boundary(double* swapbuf, int Left, int Right, int lelg, int lelgy, int totlelg, MPI_Comm cart_comm){
@@ -523,8 +522,9 @@ public:
         MPI_Gatherv(sendbuf, lelg*lelgy, MPI_DOUBLE, revcbuf, revc, disp, MPI_DOUBLE, root, MPI_COMM_WORLD);
     }    
 
-    void final_message(int pid){
+    void final_message(int pid, double tt){
         if (pid == 0){
+            cout << " TOTOAL ELASPED TIME:    " << tt << endl;
             cout << " RUN FINISHED. THIS IS SOLVED USING BLAS-BASED ITERATIONS. " << endl;
         }
     }

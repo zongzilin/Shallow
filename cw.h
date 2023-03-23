@@ -25,13 +25,12 @@ public:
     void castSpec(int Nx, int Ny, double dt, double T, double ic, int pid){
 
         if (pid == 0){
-            cout << "------------ SOLVER START ------------" << endl;
-            cout << "                                      " << endl;
             cout << "----------- SPECIFICATIONS -----------" << endl;
             cout << " Nx: " << Nx << "                      " << " Ny: " << Ny << endl;
             cout << " dt: " << dt << "                      " << " T: " << T << endl;
             cout << " Initial Conditions: " << ic << endl;
             cout << "--------------------------------------" << endl;
+            cout << "Timestepping ...." << endl;
         }   
 
     }
@@ -380,6 +379,9 @@ public:
     double* HHH = new double[Nx*Ny];
 
     cblas_dcopy(lelgy*lelg, h + offset, 1, hout, 1);
+    cblas_dcopy(lelgy*lelg, v + offset, 1, vout, 1);
+    cblas_dcopy(lelgy*lelg, u + offset, 1, uout, 1);
+
     gather_to_root(uout, nprocs, lelg, lelgy, totlelg, lx, ly, 0, FFF);
     gather_to_root(vout, nprocs, lelg, lelgy, totlelg, lx, ly, 0, GGG);
     gather_to_root(hout, nprocs, lelg, lelgy, totlelg, lx, ly, 0, HHH);
@@ -424,6 +426,13 @@ public:
 
         MPI_Gatherv(sendbuf, lelg*lelgy, MPI_DOUBLE, revcbuf, revc, disp, MPI_DOUBLE, root, MPI_COMM_WORLD);
     }    
+
+    void final_message(int pid, double tt){
+        if (pid == 0){
+            cout << "  TOTAL ELASPED TIME:    " << tt << endl;
+            cout << "  RUN FINISHED. THIS IS SOLVED USING LOOP-BASED ITERATIONS. " << endl;
+        }
+    }
 
 };
 

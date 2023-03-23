@@ -3,21 +3,17 @@
 #include<mpi.h>
 #include<cblas.h>
 #include<boost/program_options.hpp>
-#include<fstream>
 #include<cstdlib>
 
 #include"cw.h"
 #include"cw_mpi.h"
 
 using namespace std;
-using std::ofstream;
-
 
 int main(int argc, char* argv[]){
 
     ShallowWater sw;
     ShallowWater_mpi mpi;
-    ofstream outdata;
 
     double dt, T;
     int Nx, Ny, ic;
@@ -29,7 +25,6 @@ int main(int argc, char* argv[]){
     int llx, lly;
     int lhx, lhy;
     int lelg, lelgy;
-
 
     sw.promptInput(argc, argv, dt, T, Nx, Ny,ic);
 
@@ -68,20 +63,26 @@ int main(int argc, char* argv[]){
     cblas_dcopy(lelgy*lelg, h0, 1, h + 3*lelgy, 1);
 
     int n_t = T/dt;
+    double t1, t2;
+
+    t1 = MPI_Wtime();
 
     for (int i_t = 0; i_t < n_t + 1; ++i_t){
 
         sw.TimeIntegrate(dx, dy, dt, lelg, lelgy, u, v, h, Left, Right, cart_comm);
 
         if (pid == 0){
-            cout << i_t*dt << endl;
+            cout << "t = " << i_t*dt << endl;
         }
         
     }
 
+    t2 = MPI_Wtime();
+    double tt = t2 - t1;
+
+    sw.final_message(pid, tt);
+
     sw.write_to_file(Nx, Ny, lelg, lelgy, lx, ly, u, v, h, pid, nprocs);
-
-
 
     MPI_Finalize();
     

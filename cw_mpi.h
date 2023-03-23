@@ -1,9 +1,10 @@
 #ifndef cw_mpi
 #define cw_mpi
 
-#include<cstdlib>
 #include<mpi.h>
 #include<tuple>
+
+#include"cw.h"
 
 using namespace std;
 

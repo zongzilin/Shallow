@@ -324,9 +324,9 @@ public:
                 for (int j = 0; j < lelgy; ++j){
                     int ind = i*lelgy + j + offset;
 
-                    dudt[ind] = -u[ind]*dudx[ind] - v[ind]*dudy[ind] - 9.810*dhdx[ind];
-                    dvdt[ind] = -u[ind]*dvdx[ind] - v[ind]*dudy[ind] - 9.810*dhdy[ind];
-                    dhdt[ind] = -h[ind]*dudx[ind] - u[ind]*dhdx[ind] - h[ind]*dvdy[ind] - v[ind]*dhdy[ind];
+                    dudt[ind] = -u_rk[ind]*dudx[ind] - v_rk[ind]*dudy[ind] - 9.810*dhdx[ind];
+                    dvdt[ind] = -u_rk[ind]*dvdx[ind] - v_rk[ind]*dudy[ind] - 9.810*dhdy[ind];
+                    dhdt[ind] = -h_rk[ind]*dudx[ind] - u_rk[ind]*dhdx[ind] - h_rk[ind]*dvdy[ind] - v_rk[ind]*dhdy[ind];
 
                     u_rk[ind] = u[ind] + dt*rk_co[r_k]*rk_tco[r_k]*dudt[ind];
                     v_rk[ind] = v[ind] + dt*rk_co[r_k]*rk_tco[r_k]*dvdt[ind];

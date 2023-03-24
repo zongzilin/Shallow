@@ -1,0 +1,541 @@
+commit 4ad2a0956617e605b099aece990c98effd0fad5e
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Fri Mar 24 17:15:56 2023 +0000
+
+    last commit berfore submission
+
+M	cw.h
+M	cw_blas.h
+M	swsolve.cpp
+
+commit d7647c6a1c4933306b8a2e16075ed57184453a97
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Thu Mar 23 18:14:00 2023 +0000
+
+    added test1 build target
+
+A	Makefile
+
+commit dc77937accb90b5a986cd46f2c87072986d688be
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Thu Mar 23 10:36:17 2023 +0000
+
+    remove not required  headers
+
+M	swsolve.cpp
+
+commit 60ae423971e50143b473b8db33cd0f9195caa810
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Thu Mar 23 10:33:37 2023 +0000
+
+    removed non-required package
+
+M	cw_mpi.h
+M	swsolve_blas.cpp
+
+commit aea8cbe220bccb9116fba720231b3773cc948e27
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Thu Mar 23 09:48:13 2023 +0000
+
+    fixed typo. added timer
+
+M	cw.h
+M	cw_blas.h
+M	swsolve.cpp
+M	swsolve_blas.cpp
+
+commit f3594f9f6421debef8bc09b364ed5c983b77f66a
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Thu Mar 23 00:10:59 2023 +0000
+
+    first readme
+
+A	README
+
+commit ab4a2ba9b2f633cda28ba20b27d90b4bd39cd506
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Thu Mar 23 00:10:50 2023 +0000
+
+    FIRST MAKE COMMIT
+
+M	CMakeLists.txt
+
+commit 559af6a9eced1469743c8945eeb114b4b746be83
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Wed Mar 22 23:28:19 2023 +0000
+
+    fixed typo
+
+M	cw_blas.h
+
+commit 3adf272f8e27e854b78f2dd67de304b190c9ac57
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Wed Mar 22 18:46:58 2023 +0000
+
+    ADDED DERIY
+
+M	cw_blas.h
+
+commit d09392dfab694cedf9d64a3070bff7bad2a1f54c
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Wed Mar 22 17:54:20 2023 +0000
+
+    why we need to put commit message??
+
+M	swsolve_blas.cpp
+
+commit c786173ea5ba1cbfe1aaa64170487536a6904fa1
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Wed Mar 22 17:06:49 2023 +0000
+
+    ADDED X DERIVATIVE
+
+A	cw_blas.h
+
+commit a26d19636d0537465c23b61045256830f2aa6802
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Wed Mar 22 17:06:43 2023 +0000
+
+    ADDED X DERIVATIVE
+
+A	swsolve_blas.cpp
+
+commit db3ad719578fc1bb93118ee201d120adab0ccaed
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Mon Mar 20 19:41:04 2023 +0000
+
+    ADDED WRITE RESULT TO FILE FUNCTION. NEED TO MAKE FRIEND LATER WITH MPI CLASS
+
+M	cw.h
+M	swsolve.cpp
+
+commit dcc7adce12c9a52b4fe50d2ac15394411abfd62f
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Mon Mar 20 18:53:03 2023 +0000
+
+    ENCAPSULATE TimeIntegrate
+
+M	cw.h
+M	swsolve.cpp
+
+commit f1574d0698dbe5b8dae8104b03bb96edccbea523
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Mon Mar 20 17:56:49 2023 +0000
+
+    lunch
+
+M	cw.h
+
+commit 263702832815103b7f08593ed3f88623fe224039
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Mon Mar 20 17:56:36 2023 +0000
+
+    BUGS with CLASS
+
+M	swsolve.cpp
+
+commit 64021efd031ac87811063138086550323600e956
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Mon Mar 20 13:05:55 2023 +0000
+
+    encapsulate TimeIntegrateO
+
+M	a.out
+M	cw.h
+M	cw.h.gch
+M	cw_mpi.h
+M	cw_mpi.h.gch
+A	h_ic1_t10.mat
+D	matabDebug.asv
+M	matabDebug.m
+M	shallow.m
+M	swsolve.cpp
+M	u.dat
+
+commit 955ba15759d48f44bc22d866ad9d021334b89f6e
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Mon Mar 20 12:39:48 2023 +0000
+
+    Rewrite MAIN to fix commincation problem
+
+M	a.out
+M	cw.h
+M	cw.h.gch
+M	cw_mpi.h
+M	cw_mpi.h.gch
+A	h_ic3_t10.mat
+M	matabDebug.m
+A	shallow.m
+M	swsolve.cpp
+M	u.dat
+
+commit d5e7fdae3840417367234c3aaf5cf6ce1e403eb6
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Sun Mar 19 09:34:41 2023 +0000
+
+    Should have commited last night. What did I change
+
+M	a.out
+M	cw.h
+M	cw.h.gch
+M	cw_mpi.h.gch
+M	u.dat
+
+commit e5b3c06d0ff96a1ffb43db6c6df76815ffa5b5f5
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Sat Mar 18 23:45:48 2023 +0000
+
+    FIXED FLOATING ERROR
+
+M	a.out
+M	cw.h
+M	cw.h.gch
+M	cw_mpi.h.gch
+A	dhdy.dat
+A	matabDebug.asv
+M	matabDebug.m
+A	mpiscratch.cpp
+M	swsolve.cpp
+M	u.dat
+
+commit 7de10277f7a9c84f9ebc4b8d07e0ea5d00d6035b
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Sat Mar 18 23:30:27 2023 +0000
+
+    FIXED FLOATING POINT ISSUE
+
+M	cw.h
+
+commit edb199fb19ef593b7ccf2f06c1054f82338cdc4d
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Sat Mar 18 20:14:41 2023 +0000
+
+    TODO: BUG IN DERI_X AND DERI_Y
+
+M	cw.h
+
+commit e8f05a63077aab304bd2ea4b788cf6aa07903353
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Sat Mar 18 16:28:50 2023 +0000
+
+    added cart communicator
+
+A	.vscode/settings.json
+A	a.out
+A	build/CMakeCache.txt
+A	build/CMakeFiles/3.25.0/CMakeCCompiler.cmake
+A	build/CMakeFiles/3.25.0/CMakeCXXCompiler.cmake
+A	build/CMakeFiles/3.25.0/CMakeDetermineCompilerABI_C.bin
+A	build/CMakeFiles/3.25.0/CMakeDetermineCompilerABI_CXX.bin
+A	build/CMakeFiles/3.25.0/CMakeSystem.cmake
+A	build/CMakeFiles/3.25.0/CompilerIdC/CMakeCCompilerId.c
+A	build/CMakeFiles/3.25.0/CompilerIdC/a.out
+A	build/CMakeFiles/3.25.0/CompilerIdCXX/CMakeCXXCompilerId.cpp
+A	build/CMakeFiles/3.25.0/CompilerIdCXX/a.out
+A	build/CMakeFiles/CMakeDirectoryInformation.cmake
+A	build/CMakeFiles/CMakeError.log
+A	build/CMakeFiles/CMakeOutput.log
+A	build/CMakeFiles/FindMPI/test_mpi_C.bin
+A	build/CMakeFiles/FindMPI/test_mpi_CXX.bin
+A	build/CMakeFiles/Makefile.cmake
+A	build/CMakeFiles/Makefile2
+A	build/CMakeFiles/TargetDirectories.txt
+A	build/CMakeFiles/cmake.check_cache
+A	build/CMakeFiles/progress.marks
+A	build/CMakeFiles/solver.dir/DependInfo.cmake
+A	build/CMakeFiles/solver.dir/build.make
+A	build/CMakeFiles/solver.dir/cmake_clean.cmake
+A	build/CMakeFiles/solver.dir/compiler_depend.make
+A	build/CMakeFiles/solver.dir/compiler_depend.ts
+A	build/CMakeFiles/solver.dir/depend.make
+A	build/CMakeFiles/solver.dir/flags.make
+A	build/CMakeFiles/solver.dir/link.txt
+A	build/CMakeFiles/solver.dir/progress.make
+A	build/Makefile
+A	build/cmake_install.cmake
+M	cw.h
+A	cw.h.gch
+M	cw_mpi.h
+A	cw_mpi.h.gch
+A	example2.dat
+A	h.dat
+A	h0_ic1.mat
+A	matabDebug.m
+A	matrix_test.cpp
+A	mpicart.cpp
+M	swsolve.cpp
+A	u.dat
+
+commit cc0e40fbfa1961d3f6a61594c3f291ba3cad8b0d
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Tue Mar 14 23:13:21 2023 +0000
+
+    see notes on swsolve.cpp
+
+M	cw.h
+
+commit 0dffbf7eeabd3d752fd0cb71cd58249edd5056eb
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Tue Mar 14 23:12:33 2023 +0000
+
+    Implemented RK4 and message passing. Have problem, but not big. Solution has the EXACT norm comparted to benchmark sol
+
+M	swsolve.cpp
+
+commit 2d03136e2d096e08185b18d6b84c795426d041c6
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Tue Mar 14 22:18:31 2023 +0000
+
+    ADDED RK4
+
+M	swsolve.cpp
+
+commit 9fb412f4f53299ff97635d4325d04456c1a83efc
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Tue Mar 14 22:18:11 2023 +0000
+
+    Added RK4
+
+M	cw.h
+
+commit 834da4afc3b2158b93196792f03493f565e8b2e6
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Mon Mar 13 18:58:16 2023 +0000
+
+    Added cartesian topology
+
+M	swsolve.cpp
+
+commit e37ade340d66e12fbedb226e19f19825f5cce298
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Mon Mar 13 18:58:01 2023 +0000
+
+    Added cartesian topology
+
+M	cw_mpi.h
+
+commit eac93ab1930e90565217fd7a1e8e70dd1ae9160b
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Mon Mar 13 16:39:41 2023 +0000
+
+    ADDED x and y differentiation operator for loop
+
+M	cw.h
+
+commit e1bc3a51ee4a2c080f6f503ef30ed845af6f13f7
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Mon Mar 13 16:01:49 2023 +0000
+
+    added start message ~al dente
+
+M	cw.h
+
+commit 430a0f86007c9ea29288a7b2f36dd347302acfae
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Mon Mar 13 16:01:37 2023 +0000
+
+    added start message
+
+M	cw_mpi.h
+
+commit 4287b4f6e3fd27b090a6a417581824cf3edbbead
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Mon Mar 13 16:01:27 2023 +0000
+
+    added start message
+
+M	swsolve.cpp
+
+commit 759b2c4d9dc9fde3a5a83ebb3bf5ac8d2bd3c282
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Mon Mar 13 09:45:37 2023 +0000
+
+    fixed typo in ic case 4
+
+M	cw.h
+
+commit 35f8b674b0331a8b87532f841dc41b401d244d39
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Mon Mar 13 09:39:08 2023 +0000
+
+    MPI GATHERV done
+
+M	cw_mpi.h
+
+commit 481f670d7a16f2a2e71d2ca474475cd6e0afba1f
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Mon Mar 13 09:38:46 2023 +0000
+
+    MPI GATHERV DONE. FILE IO DONE
+
+M	swsolve.cpp
+
+commit 401b36eda9179d158c157d69a834f787d069f6c3
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Sun Mar 12 11:15:23 2023 +0000
+
+    Re-write initialconditions
+
+M	cw.h
+
+commit c23ee8cbed50b97da5842b76d9e7cae207786827
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Sun Mar 12 11:15:02 2023 +0000
+
+    Re-write initialconditions
+
+M	swsolve.cpp
+
+commit 1816c61aeb25081e2bb6b9a8d77eafd60825be9c
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Sun Mar 12 10:22:25 2023 +0000
+
+    Added y domain decompostion
+
+M	cw.h
+M	cw_mpi.h
+M	swsolve.cpp
+
+commit 30259210eb53c5d58058e587236e90f6f8da03f0
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Sat Mar 11 23:29:07 2023 +0000
+
+    modified to work with domain decomposition
+
+M	cw_mpi.h
+
+commit a05d1770e74620e46e49ca49bafb96eafac29e22
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Sat Mar 11 23:28:51 2023 +0000
+
+    modified to worked with domain decompostion
+
+M	cw.h
+
+commit 14e5016e505d8bf0b1ca1edd48982527814cd5c6
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Sat Mar 11 23:28:35 2023 +0000
+
+    domain decompostion done
+
+M	swsolve.cpp
+
+commit 25c5a4e23059f882413fcfe6e1323e45a9efdede
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Sat Mar 11 22:47:40 2023 +0000
+
+    changed nothing
+
+M	swsolve.cpp
+
+commit b6e9fa314ffd8e47fc35925162e862f5ab1a3be2
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Sat Mar 11 22:47:22 2023 +0000
+
+    changed nothing
+
+M	cw.h
+
+commit f9ee6efba5a2e3995ba69719688b5f19cfdff47c
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Sat Mar 11 22:47:07 2023 +0000
+
+    fixed tuple
+
+M	cw_mpi.h
+
+commit 79428daf7b949b531f21dedcd3023549c096b053
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Sat Mar 11 22:42:23 2023 +0000
+
+    first mpi commit
+
+A	cw_mpi.h
+
+commit af073e41023a4ffa12e760c11ac6aa7db10190d6
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Sat Mar 11 22:33:49 2023 +0000
+
+    added mpi.h
+
+M	swsolve.cpp
+
+commit 623d5ed0dc74285d542ae89f8e90c02bbfacff36
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Sat Mar 4 18:52:41 2023 +0000
+
+    works well for now
+
+A	CMakeLists.txt
+
+commit fcbe15ed0f67badd8571bad2e3573e0a3b3dfe0c
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Fri Mar 3 20:41:13 2023 +0000
+
+    added promptInput. Test for more bug later
+
+M	swsolve.cpp
+
+commit 8c5f2590676528c61e71532a297e0a357880e702
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Fri Mar 3 20:40:34 2023 +0000
+
+    Implemented boost to read from command line. There should be bug. But cant find any for now.
+
+M	cw.h
+
+commit afb000c4f456b862511f1caf654bc0e0d347f1e0
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Thu Mar 2 08:35:21 2023 +0000
+
+    first commit
+
+M	swsolve.cpp
+
+commit d79b11c41b72291cdeaa704b8b498815381623ee
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Wed Mar 1 21:40:26 2023 +0000
+
+    first commit. not yet parrallel
+
+A	swsolve.cpp
+
+commit f97fe45ce0b7f8a60d824154362f69b06150c81d
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Wed Mar 1 21:39:50 2023 +0000
+
+    added break after each case switch
+
+M	cw.h
+
+commit 53eb1495246b78061c00c16ce196b98926204941
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Wed Mar 1 21:15:23 2023 +0000
+
+    added setParameter
+
+M	cw.h
+
+commit adf7972b169d2a1e81de0fe57439da5165f46ed0
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Wed Mar 1 21:08:32 2023 +0000
+
+    missing brackets in case 1
+
+M	cw.h
+
+commit 5234958b83aeebcfd3f50ef0a358896ab5316299
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Wed Mar 1 21:01:30 2023 +0000
+
+    FIRST SetInitialCONDITIONS
+
+M	cw.h
+
+commit 002669775bf36b91e17c9915a8688a979fa3e247
+Author: zong_zilin <zong.zilin@outlook.com>
+Date:   Wed Mar 1 20:47:32 2023 +0000
+
+    First Commit.
+
+A	cw.h
